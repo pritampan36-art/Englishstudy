@@ -1,0 +1,127 @@
+  
+    
+    
+    body{
+       font-family: 'Agency FB',Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .content {
+      padding: 40px;
+      background: rgba(0,0,0,0.5); /* টেক্সটের পিছনে হালকা কালো শেড */
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 100px auto;
+
+}
+
+/* style.css */
+* { box-sizing: border-box; }
+
+.navbar {
+  width: 100%;
+      /* dark background */
+  padding: 0 16px;           /* optional inner padding */
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between; /* spread items across full width */
+  align-items: center;
+  gap: 0;                          /* ensure no extra gaps if you want full stretch */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.nav-list a {
+  display: block;
+  color: #f8f8ff;
+  text-decoration: none;
+  padding: 12px 0;                /* vertical padding */
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+/* Optional: make each item take equal width */
+.nav-list li {
+  flex: 1;                         /* each item gets equal space */
+  text-align: center;              /* center text inside each item */
+}
+
+/* Hover effect */
+.nav-list a:hover {
+  color: #165194;
+}
+
+
+    .dealbazzar-text {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 20px;
+      border-radius: 30px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #165194;
+    }
+    .dealbazzar-text:hover {
+      transform: scale(1.05); /* paragraph টা বড় হয়ে সামনে আসবে */
+      box-shadow: 0 8px 20px rgb(127, 12, 12); /* হালকা shadow যোগ হবে */
+    }
+
+img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50px;
+  filter: grayscale(0%) brightness(130%);
+   box-shadow: 0 2px 30px rgba(255, 255, 255, 0.5);
+   background-color: #165194;
+}
+ 
+  
+
+button{
+   width: 150px;
+  height: 50px;
+    border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-color:  #165194;
+  font-family: 'Agency FB',Arial, Helvetica, sans-serif;
+   box-shadow: 0 10px 100px rgb(157, 255, 255); 
+   color: #ffffff;
+   text-decoration:none;
+}
+
+
+button:hover,
+button:focus{
+  transform: scale(1.05);
+  box-shadow:  6px 5px rgb(255, 197, 197);
+  transition:transform 0.15s ease, box-shadow 0.5s ease;
+}
+   .container {
+      display: flex; /* ইমেজ আর টেক্সটকে পাশাপাশি বসাবে */
+      align-items: center; /* উভয়কে মাঝ বরাবর রাখবে */
+    }
+    .container img {
+      width: 800px; /* ইমেজের সাইজ */
+      height: 550px;
+      margin-right: 20px; /* ইমেজের ডান পাশে ফাঁকা জায়গা */
+    }
+
+   @media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* ছবিকে উপরে, লেখাকে নিচে */
+    align-items: center;
+    text-align: center;
+  }
+
+  .container img {
+    width: 100%; /* পুরো স্ক্রিনে ছবি */
+    margin: 0 0 15px 0; /* নিচে gap */
+  }
+}
+
+

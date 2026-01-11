@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style.CSS">
+  <meta charset="UTF-8" />
+  <title>Sign In</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --primary: #165194;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary);
+      font-family: "Agency FB", sans-serif;
+    }
+    .card {
+      width: 380px;
+      max-width: 92vw;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+      padding: 28px;
+    }
+    .brand {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 34px;
+      color: var(--primary);
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #2b6ab8;
+      margin: 6px 0 20px;
+      font-size: 18px;
+    }
+    .form-group { margin-bottom: 14px; }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 18px;
+    }
+    input[type="email"],
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--primary);
+      border-radius: 8px;
+      font-size: 18px;
+      background: #f8fbff;
+      color: #0f2f60;
+      outline: none;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 0 18px;
+    }
+    .row .left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #1c4e97;
+      font-size: 18px;
+    }
+    .row a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .row a:hover { text-decoration: underline; }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      letter-spacing: 0.5px;
+      font-family: "Agency FB", sans-serif;
+    }
+    button:hover { background: #0f3a70; }
+
+    .footer {
+      text-align: center;
+      margin-top: 14px;
+      font-size: 18px;
+      color: #1c4e97;
+    }
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .footer a:hover { text-decoration: underline; }
+
+    /* Small tweaks for mobile */
+    @media (max-width: 420px) {
+      .brand h1 { font-size: 30px; }
+      .subtitle { font-size: 16px; }
+      label, input, button, .row a, .footer { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="brand">
+      <h1>SIGN IN</h1>
+      <p class="subtitle">Welcome back! Please log in to continue</p>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label for="username">Email or Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter email or username" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required />
+      </div>
+
+      <div class="row">
+        <label class="left">
+          <input type="checkbox" id="remember" name="remember" />
+          Remember me
+        </label>
+        <a href="#">Forgot password ?</a>
+      </div>
+
+      <button type="submit">Log In</button>
+
+      <div class="footer">
+         <a href="#">Create an new account</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
